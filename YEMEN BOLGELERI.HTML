@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUKATRA</title>
+    <link rel="icon" type="image/x-icon" href="..//FOTORAFLAR/yemen.png" >
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Trirong", serif;
+        }
+        body{
+        background-color: #874b0fad;
+        }
+        section{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        }
+        section video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        }
+       /*---------------------------------------------------SAYFANIN HER KISMI TASARIMI----------------------------------------------------*/
+        section:nth-child(1){
+        color: #fff;
+        }
+        section:nth-child(2){
+        color: #ffffff;
+        background-image: url(..//FOTORAFLAR/SOKATRA.webp);
+        background-size: 100%;
+        }
+        section:nth-child(3){
+        color: #fff;
+        }
+        section:nth-child(4){
+        color: #ffffff;
+        background-image: url(..//FOTORAFLAR/SOKATRA\ 2.jpg);
+        background-size: 1800px;
+        }
+        section .container{
+        margin: 100px;
+
+        }
+        section h1{
+        font-size: 100px;
+        }
+        section h2{
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        section .KARTLAR{
+        display: flex;
+
+        }
+        /*---------------------------------------------------------------------KARTLARIN ARKAPLAN--------------------------------------*/
+        section .KARTLAR .TEXT-KART{
+        background-color: #326e88ba;
+        margin: 20px;
+        padding: 20px;
+        height: 500px;
+        border-radius: 20%;
+        }
+        section .KARTLAR .TEXT-KART p{
+        font-size: 17px;
+        margin-top: 10px;
+        text-align: center;
+        }
+        section .KARTLAR .TEXT-KART h3{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 25px;
+        }
+        @media (max-width:900px){
+            section h1{
+                font-size: 40px;
+            }
+        section .KARTLAR{
+        flex-direction: column;
+        }    
+        }
+        /*--------------------------------------------------------KARTLARIN HAREKET ETME KODLARI ------------------------------------------*/
+        .reveal{
+        position: relative;
+        transform: translateY(135px);
+        transition: all 2s ease;
+        opacity: 0;
+        }
+        .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+        }
+        .slidergösterisi{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        }
+        .orta{
+            position: absolute;
+            top: 1952px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .navigasyon{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .bar{
+          width: 50px;
+          height: 10px;
+          border: 2px solid #fff;
+          margin: 6px;
+          cursor: pointer;
+          transition: 0.4s;
+        }
+        .bar:hover{
+            background: #fff;
+        }
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+        }
+        .slaytlar{
+            width: 500%;
+            height: 100%;
+            display: flex;
+        }
+        .slayt{
+            width: 20%;
+            transition: 0.6s;
+        }
+        .slayt img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+        }
+        #r1:checked~ .s1{
+           margin-left: 0; 
+        }
+        #r2:checked~ .s1{
+           margin-left: -20%; 
+        }
+        #r3:checked~ .s1{
+           margin-left: -40%; 
+        }
+        #r4:checked~ .s1{
+           margin-left: -60%; 
+        }
+        #r5:checked~ .s1{
+           margin-left: -80%; 
+        }
+    </style>
+</head>
+<body>
+        <!-------------------------------------------------------------------------SAYFANIN BIRINCI KISMI--------------------------------------------->
+    <section>
+        <H1>SUKATRA</H1>
+        <video src="../VIDEOLAR/SUKATRA.mp4" id="video-slider"loop autoplay muted></video>
+    </section>
+        <!-------------------------------------------------------------------------SAYFANIN IKINCI KISMI--------------------------------------------->
+    <section>
+        <div class="container reveal">
+            <h2>SUKATRA</h2>
+            <div class="KARTLAR">
+                <div class="TEXT-KART">
+                    <H3>SUKATRA TOPOGRAFYASI:</H3>
+                    <P>
+                        Adanın topografyası dağlardan, merkezi platolardan, vadilerden ve 
+                        kıyılardan oluşur ve en yüksek dağ deniz seviyesinden 1500 metre
+                        yükselir. Sokotra, uluslararası alanda denizindeki ve toprağındaki 
+                        en büyük doğa rezervi ve en büyük bitki zenginliği, şifalı otlar ve 
+                        çok yıllık ağaçlar müzesi olarak kabul edilmektedir ve bu adada 
+                        yaşamak ve üremek için keyifli olan evcil kuşların ve göçmen kuşların 
+                        güzel formlarına ev sahipliği yapmaktadır.      
+                    </P>
+                </div>
+                <div class="TEXT-KART">
+                    <H3>SUKATRA COĞRAFİ KONUMU:</H3>
+                    <P>
+                        Sokotra takımadaları, Arap Yarımadası'nın güney kıyısında, Mukalla şehrinin 
+                        önünde, Hint Okyanusu'nun Arap Denizi ile buluştuğu Aden Körfezi'nin doğusunda, 
+                        Afrika Boynuzu'nun doğusunda, Yemen kıyısındaki en yakın noktadan yaklaşık 
+                        300 km ve Aden şehrine 900 km uzaklıkta yer almaktadır. Sokotra takımadaları, 
+                        en büyük Arap ve Yemen adası olan Sokotra'nın büyük bir adasından oluşur.
+                        Sokotra Adası'nın alanı 3650 kilometrekaredir ve nüfusu, çoğu tarım ve 
+                        balıkçılıkta çalışan yaklaşık 100 bin kişidir. ve hayvancılık gelişimi.        
+                    </P>
+                </div>
+                <div class="TEXT-KART">
+                    <H3>SUKATRA TARİHSEL BİLGİLERİ:</H3>
+                    <P>
+                        Sokotra'nın tarihi eski mitlere kadar uzanır ve Yunan, Firavun ve Pers mitolojisi 
+                    ile ilişkilendirilmiştir, bu ada M.Ö. yoğun tütsü ve sabır ağaçları ile karakterize 
+                    edilmiştir ve tütsü üretim alanlarından biriydi. Bazı tarihi referanslar, adanın 
+                    Noel'den önceki ve sonraki dönemde dış istilaya maruz kaldığından bahseder ve tarihi 
+                    çalışmalar Kızılderililerin adayı ilk fethedenler arasında olduğunu gösterir.    
+                    </P>
+                </div>
+            </div>
+        </div>   
+    </section>
+        <!-------------------------------------------------------------------------SAYFANIN ÜÇÜNCÜ KISMI--------------------------------------------->
+    <section>
+        <div class="slidergösterisi orta">
+            <div class="slaytlar">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2"> 
+                <input type="radio" name="r" id="r3"> 
+                <input type="radio" name="r" id="r4"> 
+                <input type="radio" name="r" id="r5"> 
+     
+                <div class="slayt s1">
+                    <img src="../FOTORAFLAR/Shuab Plajı.png" alt="1.">
+                </div>
+                <div class="slayt">
+                    <img src="../FOTORAFLAR/DEHMİRİ Koruma Alani.png" alt="1.">
+                </div>
+                <div class="slayt">
+                    <img src="..//FOTORAFLAR/Homhil and Diksam plateau.png" alt="1.">
+                </div>
+                <div class="slayt">
+                    <img src="../FOTORAFLAR/Shuab Plajı.png" alt="1.">
+                </div>
+                <div class="slayt">
+                    <img src="../FOTORAFLAR/s1.jpg" alt="1.">
+                </div>
+            </div>
+            <div class="navigasyon">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+    
+            </div>
+        </div> 
+    </section>
+    <!-------------------------------------------------------------------------SAYFANIN DORDUNCU KISMI--------------------------------------------->
+    <section>
+        <div class="container reveal">
+            <h2>Sokotra Adası'ndaki turistik yerlerin unsurları:</h2>
+            <div class="KARTLAR">
+                <div class="TEXT-KART">
+                    <H3>DEHMİRİ Koruma Alanı:</H3>
+                    <P>
+                        Rezerv, mercan resiflerinin büyük çeşitliliğine ek olarak, pitoresk doğası 
+                        ve çevredeki kıyıların çeşitliliği ile karakterizedir ve adadaki en önemli 
+                        rezervlerden biridir ve karada, kıyıda ve su altı alanlarında bulunan çok 
+                        miktarda hayati tür içerir ve toprağı kırmızı renkli granüler killi toprak 
+                        olarak karakterize edilir ve bazı palmiye tarlaları vardır. Son zamanlarda 
+                        palmiye ağaçlarının dikildiği Dihmari köyü yakınlarında küçük.      
+                    </P>
+                </div>
+                <div class="TEXT-KART">
+                    <H3>Homhil and Diksam plateau:</H3>
+                    <P>
+                        Hummel Platosu, büyüleyici manzara manzarası ile karakterize edilirken, Windsam Platosu 
+                        ejderha kanı ağaçları ile ünlüdür ve aynı zamanda adadaki Bedevilere ev sahipliği 
+                        yapmaktadır ve plato bir dağ silsilesi ile çevrilidir ve plato Dehoror Vadisi'nin 
+                        büyüleyici manzarasına sahiptir.         
+                    </P>
+                </div>
+                <div class="TEXT-KART">
+                    <H3>Shuab Plajı</H3>
+                    <P>
+                        Sokotra adasındaki en belirgin ve güzel plajlardan biridir ve beyaz kumu ve büyüleyici 
+                        turkuaz suları ile karakterizedir ve sahilde yüzebilir veya yürüyüş yapabilir ve doğayı 
+                        ve güzel veya teknelere binebilir ve bir tura çıkabilir ve teknenin yakınında atlayan 
+                        harika yunusları görebilirsiniz, eğer yakınsanız, bu plajı ziyaret etmek için zaman ayırmalısınız.
+                    </P>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------JAVA SCRIPT KISMI-------------------------------------------------------------------------->
+    <script class="text/javascript">
+        window.addEventListener('scroll',reveal);
+   
+        function reveal(){
+           var reveals=document.querySelectorAll('.reveal');
+           for(var i=0;i<reveals.length;i++)
+           {
+               var windowheight=window.innerHeight;
+               var revealtop=reveals[i].getBoundingClientRect().top;
+               var revealpoint= 150;
+   
+               if(revealtop<windowheight-revealpoint)
+               {
+                   reveals[i].classList.add('active');
+               }
+               else
+               {
+                   reveals[i].classList.remove('active');
+               }
+           }
+        }
+       </script>
+</body>
+</html>

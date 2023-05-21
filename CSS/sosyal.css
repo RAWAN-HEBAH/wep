@@ -1,0 +1,41 @@
+<!-----------------------------------------------------MEADIA BUTTONLARIN TASARIMI----------------------------------------------------------->
+                .sosyal-meadia .meadia{
+                    position: absolute;
+                    top: 10%;
+                    left: 52%;
+                    padding: 0;
+                    margin: 0 ;
+                    transform: translate(-50%,-50%);
+                    display: flex;
+                }
+                .sosyal-meadia .meadia .meadia2{
+                    list-style: none;
+                    margin: 0 15px;
+               
+                }
+                .sosyal-meadia .meadia .meadia2 .fa{
+                    font-size: 50px;
+                    line-height:100px;
+                    transition: .6s;
+                    color: #000;
+                }
+                .sosyal-meadia .meadia .meadia2 .fa:hover{
+                    color: rebeccapurple;
+                }
+                .sosyal-meadia .meadia .meadia2 a{
+                    top: 100PX;
+                    left: 55%;
+                    position: relative;
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 70px;
+                    background-color: aliceblue;
+                    text-align: center;
+                    transition: .6s ;
+                    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+                }
+                .sosyal-meadia .meadia .meadia2 a:hover{
+                    transform: translate(0, -10px);
+
+                }

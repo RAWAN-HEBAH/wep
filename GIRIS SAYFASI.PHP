@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GİRİŞ SAYFASI</title>
+    <link rel="icon" type="image/x-icon" href="..//FOTORAFLAR/logo .png" >
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url(../FOTORAFLAR/siyah.jpg);
+            background-size: cover;
+        }
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+            height: 450px;
+            background: rgba(0,0,0,0.685);
+            border: 2px solid rgba(95,66,138,0.685);
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+        img[alt="RAWAN"]{
+            position: absolute;
+            top: -50px;
+            left: 118px;
+        }
+        h2{
+            color: rgb(201,201,201);
+            text-align: center;
+            margin-top: 90px;
+        }
+        h3[class="PALORY"]{
+            color: rgb(201,201,201);
+            text-align: left;
+            margin-top: 60PX;
+        }
+        h3[class="KULLANCI"]{
+            color: rgb(201,201,201);
+            text-align: left;
+            margin-top: 20PX;
+        }
+        P[CLASS="ŞİFRE"]{
+            position: absolute;
+            color: rgb(201,201,201);
+            text-align: center;
+            top: 350PX;
+            left: 70PX;
+            cursor: pointer;
+        }
+        P:hover{
+            color: #FF0606;
+        }
+        input[TYPE="text"],[TYPE="password"]{
+            position: absolute;
+            outline: none;
+            border: none;
+            width: 240PX;
+            height: 35PX;
+            border-bottom: 2PX solid #505050;
+            padding: 5PX;
+            color: rgb(201,201,201);
+            background-color: rgba(95,66,138,0.685);
+        }
+        input[TYPE="text"]{
+            top: 160PX;
+            left: 50PX;
+        }
+        input[TYPE="password"]{
+            top: 250PX;
+            left: 50PX;
+        }
+        input[VALUE="GİRİŞ YAP"]{
+            position: absolute;
+            top: 305PX;
+            left: 50PX;
+            border: none;
+            outline: none;
+            width: 120PX;
+            height: 35PX;
+            background: rgb(201,201,201) ;
+            color: rgba(95,66,138,0.685);
+            border-radius: 15PX;
+            font-size: 20PX;
+            cursor: pointer;
+        }
+        input[VALUE="GİRİŞ YAP"]:hover{
+            background-color: rgba(95,66,138,0.685);
+            color: #000000;
+        }
+        input[VALUE="TEMEZLE"]{
+            position: absolute;
+            top: 305PX;
+            left: 180PX;
+            border: none;
+            outline: none;
+            width: 120PX;
+            height: 35PX;
+            background: rgb(201, 201, 201);
+            color: rgba(95,66,138,0.685);
+            border-radius: 15PX;
+            font-size: 20PX;
+            cursor: pointer;
+        }
+        input[VALUE="TEMEZLE"]:hover{
+            background-color: rgba(95,66,138,0.685);
+            color: #000000;
+        }
+    </style>
+    <?PHP
+    $KULLANCI=$_POST['KULLANCI'];
+    $PALORY=$_POST['PALORY'];
+    if(($KULLANCI=="G221210582@SAKARYA.EDU.TR")&&($PALORY=="G221210582"))
+    {
+        echo"<script>location.replace('RAWAN CV.HTML')
+        alert('HOŞ GELDİNİZ G221210582')</SCRIPT>";
+    }
+    elseif(($KULLANCI=="G221210582@SAKARYA.EDU.TR")&&(empty($PALORY)))
+    {
+       echo"BOŞLUK BIRAKLMAMALISINIZ";
+    }
+    ?>
+</head>
+<body>
+    <header>
+
+    </header>
+    <SEction>
+        <form action="" method="POST" NAME="FORM1">
+            <img src="../FOTORAFLAR/RAWAN.jpeg" width="100" height="100" alt="RAWAN">
+            <H2>GİRİŞ SAYFASI</H2>
+            <H3 CLASS="KULLANCI">KULLANCI ADI:</H3>
+            <input type="text" placeholder="KULLANCI ADINIZ GIRIN" name="KULLANCI" ID="KULLANCI">
+            <H3 CLASS="PALORY">PALORY:</H3>
+            <input type="password" placeholder="PALORY GIRIN" name="PALORY" ID="PALORY">
+            <input type="submit" name="GÖNDER" value="GİRİŞ YAP">
+            <input type="reset" name="TEMEZLE" value="TEMEZLE">
+            <P CLASS="ŞİFRE">ŞİFRE UNUTUNUZ MU?</P>
+        </form>
+    </SEction>
+    
+</body>
+</html>

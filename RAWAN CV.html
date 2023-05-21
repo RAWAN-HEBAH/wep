@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RAWAN CV</title>
+    <link rel="icon" type="image/x-icon" href="../FOTORAFLAR/logo .png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+
+        @import url('http://fonts.googleapis.com/css2?family=Montserrat&dispay=swap');
+        body{
+            background-image: url(../FOTORAFLAR/siyah.jpg);
+            background-size: 100%;
+            height: 122vh;
+            font-weight:bold ;
+            letter-spacing: 2px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        nav{
+        height:70px;
+        background-color:rgba(95, 66, 138, 0.685);
+        }
+        .RAWAN{
+            color: #ffffff;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        
+        }
+        ul li{
+            width: 300px;
+            height: 55px;
+            font-size: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 70px;
+            opacity: 0.8;
+            
+        }
+        ul li a{
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            display: block;
+        
+        }
+        ul li a:hover{
+            background-color: rgb(89, 89, 89);
+
+        }
+        ul li ul li{
+            display: none;
+            float: left;
+        }
+        ul li:hover ul li{
+            display: block;
+            transition: max-height 0.2s ease-in;
+        }
+        .MAIN{
+            background-color: aliceblue;
+            height: auto;
+            width: 1000px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 95%;
+        }
+        .SOL{
+            background-color: rgba(95, 66, 138, 0.96);
+            width: 250px;
+            height: 100%;
+            float: left;
+        }
+        .SAG{
+            width: 450px;
+            float: left;
+        }
+        .FOTO{
+            height: 180px;
+            width: 180px;
+            background-color: #ddd;
+            border-radius: 40%;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            border: 10px solid rgba(95, 66, 138, 0.96);
+            box-shadow: 6px 7px 9px 5px rgba(95, 66, 138, 0.453);
+        }
+        .FOTO img{
+            width: 100%;
+            height: 100%;
+            border-radius: 40%;
+        }
+        .KUTU-1{
+            position: relative;
+        }
+        .HEADING{
+            background-color: #4d4d4d;
+            padding: 10px;
+            color: #ffffff;
+            text-align: left;
+            padding-left: 20px;
+            margin-right: -15px;
+        }
+        .HEADING::after{
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            background-color: #5a5959;
+            left: 241px;
+            top:26px;
+            transform: rotate(56deg);
+            z-index: -1;
+        }
+        .p1{
+            padding: 9px 10px;
+            font-size: 11px;
+        }
+        .icons1{
+            font-size: 16px !important;
+            padding-right: 10px !important;
+            vertical-align: sub;
+            color: #2e2e2e;
+        }
+        .YETENEK-container{
+            width: 90%;
+            background-color: #4d4d4d;
+            margin: 0px 10px;
+        }
+        .YETENEK{
+            text-align: right;
+            padding: 2px;
+            padding-bottom: 2px;
+            color: white;
+        }
+        .html{
+            width: 95%;
+            background-color: white;
+        }
+        .css{
+            width: 89%;
+            background-color: white;
+        }
+        .javascript{
+            width: 65%;
+            background-color: white;
+        }
+        .paython{
+            width: 60%;
+            background-color: white;
+        }
+        .wep{
+            width: 80%;
+            background-color: white;
+        }
+        .grafik{
+            width: 67%;
+            background-color: white;
+        }
+        .icons2{
+            padding: 15px ;
+        
+
+        }
+        .ADI-DIV{
+            padding: 86px 0px 60px 55px;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        .ADI-DIV h1{
+            margin-bottom: 10px;
+        }
+        .KUTU-2{
+            padding: 0px 50px ;
+            margin-top: 23px;
+            margin-left: 270px;
+        }
+        .p2{
+            color: #2e2e2e;
+            font-size: 10px;
+            font-weight: 300px;
+            letter-spacing: 2px;
+            line-height: 18px;
+            margin-top: 0px;
+        }
+        h2{
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #2e2e2e;
+        }
+        .icons3{
+            vertical-align: bottom;
+            font-size: 21px !important;
+            color: #2e2e2e;
+        }
+        p3{
+            font-size: 13px;
+            word-spacing: 1px;
+            letter-spacing: 0px;
+            margin-top: 10px;
+        }
+        .p3 span{
+            color: rgba(95, 66, 138, 0.96); padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+     <!-----------------------------------------------HAREKET EDEN RESMİ İÇİN------------------------------------------------------->
+
+     <header>
+        <figure>
+            <marquee > <img width="300" height="200" src="../FOTORAFLAR/yemen.png" alt="YEMEN BAYRAĞI" /><img src="../FOTORAFLAR/sakarya.png" height="200" width="150" alt="SAKARYA LOGOSU"><img src="../FOTORAFLAR/TURKIYE BAYRAGI.PNG" width="300" height="200" alt="TURKIYE BAYRĞI">
+            <figcaption style="color: rgb(255, 255, 255);">------------------YEMEN-----------------SAKARYA----------------------TURKIYE---------------</figcaption></marquee>
+        </figure>
+    </header>
+
+   <!-----------------------------------------------------AÇILIR LISTELER----------------------------------------------------------->
+
+    <section>
+        <nav>
+            <ul>
+                <li class="RAWAN">RAWAN HEBAH</li>
+                <li><a href="RAWAN CV.html"  class="analist">TANITIM</a></li>
+                <li><a href="YEMEN BOLGELERI.HTML" class="analist">YENEM BÖLGELERİ</a>
+                </li>
+                <li><a href="RAWAN ILETISIM.html" class="analist">ilitişim</a></li>
+            </ul> 
+        </nav>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <div class="MAIN">
+        <div class="SOL">
+            <br>
+            <div class="FOTO"><img src="../FOTORAFLAR/RAWAN.jpeg"></div>
+            <div class="KUTU-1">
+                <div class="HEADING">
+                    <p>İLETİŞİM</p>
+                </div>
+                <p class="p1>"><i class="material-icons icons1" style="color:  #ffffff;">call</i>+905*******597</p>
+                <p class="p1>"><i class="material-icons icons1" style="color:  #ffffff;;">email</i>r.almh****1@gmail.com</p>
+            </div>
+            <div class="KUTU-1">
+                <div class="HEADING">
+                    <p>diller</p>
+                </div>
+                <p class="p1">HTML
+                 <div class="YETENEK-container">
+                     <div class="YETENEK html"></div>  
+                    </div>
+                </p>
+
+                <p class="p1">paython
+                    <div class="YETENEK-container">
+                        <div class="YETENEK paython"></div>  
+                    </div>
+                </p>
+
+                <p class="p1">CSS
+                    <div class="YETENEK-container">
+                        <div class="YETENEK css"></div>  
+                    </div>
+                </p>
+
+                <p class="p1">JAVASCRIPT
+                    <div class="YETENEK-container">
+                        <div class="YETENEK javascript"></div>  
+                    </div>
+                </p>
+            </div>
+            <br>
+
+            <div class="KUTU-1">
+                <div class="HEADING">
+                    <p>BECEREKLERIM</p>
+                </div>
+                <p class="p1">wep tasarimi
+                 <div class="YETENEK-container">
+                     <div class="YETENEK wep"></div>  
+                    </div>
+                </p>
+
+                <p class="p1">grafik tasarimi
+                    <div class="YETENEK-container">
+                        <div class="YETENEK grafik"></div>  
+                    </div>
+                </p>
+            </div>
+            <br>
+            <div class="KUTU-1">
+                <div class="HEADING">
+                    <p>HOBİLERİM</p>
+                </div>
+               <div class="h-div">
+                 <i class="material-icons icons2" style="color: rgb(255, 255, 255);">camera_roll</i>
+                 <i class="material-icons icons2" style="color: rgb(255, 255, 255);">music_note</i>
+                 <i class="material-icons icons2" style="color: rgb(255, 255, 255);">motorcycle</i>
+                 <i class="material-icons icons2" style="color: rgb(255, 255, 255);">border_color</i>
+                </div>
+            </div>
+        </div>
+        <div class="SAG"></div>
+          <div class="ADI-DIV">
+             <h1>RAWAN HEBAH</h1>
+             <p>BİLGİSAYAR MÜHENDİSLİĞİ OKUYORUM</p>
+          </div>
+
+          <div class="KUTU-2">
+            <h2>HAKKIMDA:<i class="material-icons icons3" style="font-size: 28px !important;
+             ">perm_identity</i></h2>
+             <p class="p2">
+                2002 DE DOGDUM CIDDEDE, YEMENLIYIM 7 KARDESIM VAR ANNEM
+                    VE BABAMLA YAŞARDIM, ŞUANLIK YURTTA KALIRIM BILGISAYAR 
+                    ILE ILGI KONULAR ILGEME ÇEKER VE HEP ÜMİTLERİM ARKASINDA KOŞMAYA DEVAM EDECEĞİM...
+             </p>
+          </div>
+
+          <div class="KUTU-2">
+            <h2>AKADEMİK KARİYERİM:<i class="material-icons icons3" style="font-size: 28px !important;">
+                border_color</i></h2>
+             <p class="p3">2010-2015<span>İLK OKULDAN MEZUN OLMA</span></p>
+             <p class="p2">
+                <a href="https://twitter.com/MOE_JDH_20_1012?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">90 ilk okulu</a>
+             </p>
+
+             <p class="p3">2015-2018<span>ORTA OKULDAN MEZUN OLMA</span></p>
+             <p class="p2">
+                <a href="https://www.instagram.com/middle_khamsoon/">50 orta okulu</a>
+             </p>
+
+             <p class="p3">2018-2020<span>LİSDEN MEZUN OLMA</span></p>
+             <p class="p2">
+                <a href="https://www.instagram.com/100s2k/">100 lise okulu</a>
+             </p>
+             <p class="p3">2023<span>LİSANS OKUMA</span></p>
+             <p class="p2">
+                DEVAM EDİLİYOR
+             </p>
+
+          </div>
+
+          <div class="KUTU-2">
+            <h2>İŞ DENEYİM VE GÖNÜLLÜLÜK<i class="material-icons icons3" style="font-size: 28px !important;">folder</i></h2>
+             <p class="p3">2020-2022<span>TURİZM YAZILIM ŞİRKETİ</span></p>
+             <p class="p2">
+                KODLAR YAZARAK UÇAK BİLETİ SATIN ALIYORDUK.
+             </p>
+
+             <p class="p3">2022-2023<span>SAKARYA GENÇ KIZILAY GÖNÜLLÜYÜM</span></p>
+             <p class="p2">
+               TÜRKİYEDE EN İNTERAKTİF GÖNÜLLÜ EKİBİ ÖDÜLÜNÜ KAZANDIK.
+             </p>
+
+          </div>
+        </div>
+    </div>
+</body>
+</html>

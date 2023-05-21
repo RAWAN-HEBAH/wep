@@ -1,0 +1,130 @@
+body
+ {
+padding: 0;
+margin: 0;
+font-family: Cambria;
+background: url(wep\ teknolojileri/siyah.jpg);
+background-size: cover;
+}
+form
+{
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    background:rgba(0, 0, 0, 0.685);
+    border: 2px solid rgba(95, 66, 138, 0.685);
+    border-radius: 15px ;
+    box-sizing: border-box;
+}
+img[ alt="RAWAN"]
+{
+
+    position: absolute;
+    top: -50px;
+    left: 118px;
+
+
+}
+H2
+{
+    color:rgb(201, 201, 201);
+    text-align: center;
+    margin-top: 90px;
+}
+H3[CLASS="KULLANCI"]
+{
+    color:rgb(201, 201, 201);
+    text-align: LEFT;
+    margin-top: 20px;
+    
+}
+H3[CLASS="PALORY"]
+{
+    color:rgb(201, 201, 201);
+    text-align: LEFT;
+    margin-top: 60px;
+}
+P[CLASS="SIFRE"]
+{
+    position: absolute;
+    color:rgb(201, 201, 201);
+    text-align: center;
+    top: 350px;
+    left: 70PX;
+    cursor: pointer;
+}
+P:hover
+{
+color:#ff0606;
+}
+input[type="text"],[type="password"]
+{
+
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-bottom: 2px solid#505050;
+    padding: 5PX;
+    color:rgb(201, 201, 201);
+    background-color:rgba(95, 66, 138, 0.685);
+    
+}
+input[type="text"]
+{
+    top: 160PX;
+    left: 50PX;
+}
+input[type="password"]
+{
+    top: 250PX;
+    left: 50PX;
+}
+input[VALUE="GIRIŞ YAP"]
+{
+    position: absolute;
+    top: 305PX;
+    left: 50PX;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 35px;
+    background: rgb(201, 201, 201);
+    color:rgba(95, 66, 138, 0.685);
+    border-radius: 15PX;
+    font-size: 20PX;
+    cursor: pointer;
+}
+input[VALUE="GIRIŞ YAP"]:hover
+{
+background-color:rgba(95, 66, 138, 0.685);
+color: #000000;
+
+}
+input[VALUE="TEMİZLE"]
+{
+    position: absolute;
+    top: 305PX;
+    left: 180PX;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 35px;
+    background: rgb(201, 201, 201);
+    color:rgba(95, 66, 138, 0.685);
+    border-radius: 15PX;
+    font-size: 20PX;
+    cursor: pointer;
+}
+input[VALUE="TEMİZLE"]:hover
+{
+background-color:rgba(95, 66, 138, 0.685);
+color: #000000;
+
+}
+
