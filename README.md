@@ -1,1 +1,3 @@
 # wep
+sayfamı hoş geldiniz öncelikle sayfamı 4 sayfadan ulaşır tanıtım şehirm giriş sayfası ve en son iletişim sayfası. ilitişim ve giriş sayfası kontrol etmek için php kodları kullandım yanı sıra sayfalar düzetmek için hep ve hep css kullandım ve fazla dosyalar olmasın diye HTML sayfalarda ekledim projem budur umarım beğenirsiniz.
+saygılarımla...
